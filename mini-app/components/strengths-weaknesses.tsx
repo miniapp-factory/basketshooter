@@ -1,7 +1,6 @@
 "use client";
 
 import { Card, CardHeader, CardContent, CardTitle, CardDescription } from "@/components/ui/card";
-import { List, ListItem } from "@/components/ui/list";
 
 export default function StrengthsWeaknesses() {
   return (
@@ -12,17 +11,17 @@ export default function StrengthsWeaknesses() {
       </CardHeader>
       <CardContent>
         <h3 className="text-lg font-semibold mb-2">Strengths</h3>
-        <List>
-          <ListItem>Comprehensive data coverage</ListItem>
-          <ListItem>Real‑time updates</ListItem>
-          <ListItem>Open source integration</ListItem>
-        </List>
+        <ul className="list-disc pl-5">
+          <li>Comprehensive data coverage</li>
+          <li>Real‑time updates</li>
+          <li>Open source integration</li>
+        </ul>
         <h3 className="text-lg font-semibold mt-4 mb-2">Weaknesses</h3>
-        <List>
-          <ListItem>Limited to publicly available data</ListItem>
-          <ListItem>Potential data inaccuracies</ListItem>
-          <ListItem>Requires manual validation</ListItem>
-        </List>
+        <ul className="list-disc pl-5">
+          <li>Limited to publicly available data</li>
+          <li>Potential data inaccuracies</li>
+          <li>Requires manual validation</li>
+        </ul>
       </CardContent>
     </Card>
   );
